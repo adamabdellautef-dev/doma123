@@ -1,0 +1,118 @@
+/* Reset بسيط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* خلفية الصفحة */
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+}
+
+/* عنوان */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+/* Navbar */
+nav#course {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* لينكات */
+nav a {
+    text-decoration: none;
+    color: white;
+    background: #007bff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #0056b3;
+}
+
+/* الفورم */
+form {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin: 10px 0 5px;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* زرار */
+input[type="submit"] {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #1e7e34;
+}
+
+/* الجدول */
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* هيدر الجدول */
+thead {
+    background: #007bff;
+}
+
+/* خلايا */
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav#course {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
